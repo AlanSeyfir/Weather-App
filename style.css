@@ -1,0 +1,17 @@
+:root{
+    --white-text: #E7E7EB;
+    --grayish-text: #A09FB1;
+    --gray-text: #88869D;
+    --btn: #6E707A;
+    --circle-btn: rgba(110, 112, 122, 0.3);
+    --bk-blue: #1E213A;
+    --bk-dark-blue: #100E1D;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.material-icons.white{
+    color: var(--white-text);
+}
