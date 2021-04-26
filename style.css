@@ -1,17 +1,141 @@
-:root{
-    --white-text: #E7E7EB;
-    --grayish-text: #A09FB1;
-    --gray-text: #88869D;
-    --btn: #6E707A;
-    --circle-btn: rgba(110, 112, 122, 0.3);
-    --bk-blue: #1E213A;
-    --bk-dark-blue: #100E1D;
+:root {
+  --white-text: #e7e7eb;
+  --grayish-text: #a09fb1;
+  --gray-text: #88869d;
+  --btn: #6e707a;
+  --circle-btn: rgba(110, 112, 122, 0.7);
+  --bk-blue: #1e213a;
+  --bk-dark-blue: #100e1d;
+
+  /*Add the font-weight*/
 }
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
-.material-icons.white{
-    color: var(--white-text);
+body {
+}
+
+img {
+  max-width: 100%;
+}
+
+.material-icons.white {
+  color: var(--white-text);
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+.btn-browser {
+  padding: 1em;
+  color: var(--white-text);
+  background-color: var(--btn);
+  border: var(--circle-btn);
+}
+
+.btn-browser:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.btn-location {
+  background-color: var(--circle-btn);
+  border: var(--circle-btn);
+  border-radius: 20px;
+  width: 3em;
+}
+
+.btn-location:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.today__weather {
+  background-color: var(--bk-blue);
+}
+
+.weather__info {
+  overflow-x: hidden;
+}
+
+.bk__cloud--img {
+  opacity: 0.03;
+  position: relative;
+  right: 26%;
+  max-width: 145%;
+}
+
+.actual__weather__container {
+}
+
+.actual__weather--img {
+  width: 10em;
+  max-width: 70%;
+  position: relative;
+  top: 15rem;
+  left: 11rem;
+  transform: translate(-50%, -260%);
+  /* transform: translate(5rem,-15rem); */
+}
+
+.weather__data {
+  transform: translateY(-200px);
+  text-align: center;
+  color: var(--white-text);
+}
+
+.weather__number {
+  font-size: 7rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.degrees {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--grayish-text);
+}
+
+.actual__forecast {
+  margin: 0.5em 0 1.5em 0;
+  font-size: 2.25rem;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--grayish-text);
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date > * {
+  margin-left: 1em;
+}
+
+.date,
+.location {
+  color: var(--gray-text);
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.location {
+  display: flex;
+  margin-top: 1.5em;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }
