@@ -67,16 +67,16 @@ img {
 
 .weather__info {
   overflow-x: hidden;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .bk__cloud--img {
   opacity: 0.03;
   position: relative;
   right: 26%;
-  max-width: 145%;
-}
-
-.actual__weather__container {
+  width: 145%;
+  max-width: 900px;
 }
 
 .actual__weather--img {
@@ -84,7 +84,7 @@ img {
   max-width: 70%;
   position: relative;
   top: 15rem;
-  left: 11rem;
+  left: 4rem;
   transform: translate(-50%, -260%);
   /* transform: translate(5rem,-15rem); */
 }
