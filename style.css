@@ -27,6 +27,10 @@ img {
   color: var(--white-text);
 }
 
+.wrapper{
+  display: flex;
+}
+
 .container {
   margin: 0 auto;
 }

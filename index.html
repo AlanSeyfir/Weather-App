@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../img/LightCloud.png" />
+
     <!--Material Icons-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -20,15 +22,17 @@
   </head>
   <!-- https://fonts.google.com/icons?selected=Material+Icons&icon.query=location -->
   <body>
-    <div class="today__weather">
-      <div class="container">
-        <nav class="nav">
-          <button class="btn-browser">Search for places</button>
-          <button class="btn-location">
-            <span class="material-icons white">gps_fixed</span>
-          </button>
-        </nav>
-        <div class="weather__info">
+    <div class="wrapper">
+      <!-- -------------------ACTUAL WEATHER------------------- -->
+      <div class="today__weather">
+        <div class="container">
+          <nav class="nav">
+            <button class="btn-browser">Search for places</button>
+            <button class="btn-location">
+              <span class="material-icons white">gps_fixed</span>
+            </button>
+          </nav>
+          <div class="weather__info">
             <img
               class="bk__cloud--img"
               src="img/Cloud-background.png"
@@ -40,20 +44,36 @@
               alt="Heavy Clouds"
             />
 
-          <div class="weather__data">
-            <div class="weather__number">
-               <p>15<span class="degrees">°C</span></p> 
+            <div class="weather__data">
+              <div class="weather__number">
+                <p>15<span class="degrees">°C</span></p>
+              </div>
+              <h3 class="actual__forecast">Cloudy</h3>
+              <div class="date">
+                <p>Today</p>
+                <!--Use maybe pseudo elements-->
+                <p>|</p>
+                <p>Fri, 5 April</p>
+              </div>
+              <div class="location">
+                <span class="material-icons">location_on</span>
+                <p>Helsinki</p>
+              </div>
             </div>
-            <h3 class="actual__forecast">Cloudy</h3>
-            <div class="date">
-              <p>Today</p>
-              <!--Use maybe pseudo elements--> <p>|</p>
-              <p>Fri, 5 April</p>
-            </div>
-            <div class="location">
-              <span class="material-icons">location_on</span>
-              <p>Helsinki</p>
-            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------------FORECAST WEATHER------------------- -->
+      <div class="forecast__weather">
+        <div class="container">
+          <div class="card">
+            <p>Tommorrow</p>
+            <img src="../img/Snow.png" alt="tomorrow weather img">
+            <span class="degrees__forecast">
+              <p>16<span class="degrees">°C</span></p>
+              <p>11<span class="degrees">°C</span></p>
+            </span>
           </div>
         </div>
       </div>
