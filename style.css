@@ -16,9 +16,6 @@
   font-family: "Raleway", sans-serif;
 }
 
-body {
-}
-
 img {
   max-width: 100%;
 }
@@ -29,6 +26,7 @@ img {
 
 .wrapper{
   display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -142,4 +140,62 @@ img {
   justify-content: center;
   align-items: center;
   font-weight: 600;
+}
+
+.d-flex__card{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.forecast__weather{
+  background-color: var(--bk-dark-blue);
+}
+
+.degrees__forecast{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+.card{
+  background-color: var(--bk-blue);
+  margin: 2em;
+  padding: 1.8em;
+  color: var(--white-text);
+  width: 12em;
+}
+
+.card img{
+  max-width: 150px;
+  margin-right: 1em;
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+.card__title{
+  /* margin-top: 0.5em; */
+  font-size: 2rem;
+  font-weight: 600;
+  
+}
+
+.card span p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.card .degrees{
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--grayish-text);
+}
+
+.max__degree{
+  color: var(--white-text);
+}
+
+.min__degree{
+  color: var(--grayish-text);
 }
