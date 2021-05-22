@@ -88,7 +88,6 @@ img {
   top: 15rem;
   left: 4rem;
   transform: translate(-50%, -260%);
-  /* transform: translate(5rem,-15rem); */
 }
 
 .weather__data {
@@ -223,6 +222,7 @@ img {
 .highlight__bottom{
   display: flex;
   justify-content: center;
+  margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -319,5 +319,92 @@ footer{
 @media (min-width: 700px){
   .d-flex__card{
     flex-direction: unset;
+  }
+}
+
+@media (min-width: 600px){
+
+  .menu__degrees{
+    text-align: end;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-right: 3.3em;
+    margin-left: 3.3em;
+  }
+
+  .fix__button{
+    margin-right: 1em;
+    height: 3em;
+  }
+
+  .today__weather{
+    width: 30em;
+  }
+
+  .card{
+    margin: 1em;
+  }
+
+  .card__highlight{
+    margin-top: 1em;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .today__weather{
+    height: 100%;
+  }
+
+  .wrapper{
+    flex-direction: unset;
+  }
+
+  .wrapper__right__bar{
+    width: 100%;
+  }
+
+  .d-flex__card{
+    max-width: 100%;
+  }
+
+  .fix__cards{
+    padding: 0;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+
+  .grid__cards{
+    display: unset;
+  }
+
+  .d-flex__highlight{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .last__card{
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+
+  .footer{
+    background: var(--bk-dark-blue);
+    margin: 0;
+    padding: 2em 0;
+  }
+}
+
+@media (max-width: 1278px){
+  .d-flex__card{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1330px){
+  .d-flex__highlight{
+    flex-direction: inherit;
   }
 }

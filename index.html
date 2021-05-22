@@ -24,165 +24,188 @@
   <body>
     <div class="wrapper">
       <!-- -------------------ACTUAL WEATHER------------------- -->
-      <div class="today__weather">
-        <div class="container">
-          <nav class="nav">
-            <button class="btn-browser">Search for places</button>
-            <button class="btn-location">
-              <span class="material-icons white">gps_fixed</span>
-            </button>
-          </nav>
-          <div class="weather__info">
-            <img
-              class="bk__cloud--img"
-              src="img/Cloud-background.png"
-              alt="four clouds background"
-            />
-            <img
-              class="actual__weather--img"
-              src="img/Shower.png"
-              alt="Heavy Clouds"
-            />
+      <div class="wrapper__bar">
+        
+        <div class="today__weather">
 
-            <div class="weather__data">
-              <div class="weather__number">
-                <p>15<span class="degrees">°C</span></p>
-              </div>
-              <h3 class="actual__forecast">Cloudy</h3>
-              <div class="date">
-                <p>Today</p>
-                <!--Use maybe pseudo elements-->
-                <p>|</p>
-                <p>Fri, 5 April</p>
-              </div>
-              <div class="location">
-                <span class="material-icons">location_on</span>
-                <p>Helsinki</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- -------------------FORECAST WEATHER------------------- -->
-      <div class="forecast__weather">
-        <div class="container">
-          <div class="d-flex__card">
-            <div class="card">
-              <p class="card__title">Tommorrow</p>
-              <img src="./img/Clear.png" alt="tomorrow weather img">
-              <span class="degrees__forecast">
-                <p class="max__degree">16<span class="degrees">°C</span></p>
-                <p class="min__degree">11<span class="degrees">°C</span></p>
-              </span>
-            </div>
+          <div class="container">
+            <nav class="nav">
+              <button class="btn-browser">Search for places</button>
+              <button class="btn-location">
+                <span class="material-icons white">gps_fixed</span>
+              </button>
+            </nav>
+            <div class="weather__info">
+              <img
+                class="bk__cloud--img"
+                src="img/Cloud-background.png"
+                alt="four clouds background"
+              />
+              <img
+                class="actual__weather--img"
+                src="img/Shower.png"
+                alt="Heavy Clouds"
+              />
   
-            <div class="card">
-              <p class="card__title">Sun, 7 May</p>
-              <img src="img/Clear.png" alt="tomorrow weather img">
-              <span class="degrees__forecast">
-                <p class="max__degree">16<span class="degrees">°C</span></p>
-                <p class="min__degree">11<span class="degrees">°C</span></p>
-              </span>
-            </div>
-          </div>
-
-          <div class="d-flex__card">
-            <div class="card">
-              <p class="card__title">Mon, 8 May</p>
-              <img src="img/Hail.png" alt="tomorrow weather img">
-              <span class="degrees__forecast">
-                <p class="max__degree">16<span class="degrees">°C</span></p>
-                <p class="min__degree">11<span class="degrees">°C</span></p>
-              </span>
-            </div>
-  
-            <div class="card">
-              <p class="card__title">Tue, 9 May</p>
-              <img src="img/Sleet.png" alt="tomorrow weather img">
-              <span class="degrees__forecast">
-                <p class="max__degree">16<span class="degrees">°C</span></p>
-                <p class="min__degree">11<span class="degrees">°C</span></p>
-              </span>
-            </div>
-          </div>
-
-          <div class="d-flex__card">
-            <div class="card">
-              <p class="card__title">Wed, 10 May</p>
-              <img src="img/LightCloud.png" alt="tomorrow weather img">
-              <span class="degrees__forecast">
-                <p class="max__degree">16<span class="degrees">°C</span></p>
-                <p class="min__degree">11<span class="degrees">°C</span></p>
-              </span>
-            </div>
-          </div>
-
-          <!-- -------------------TODAY HIGHLIGHTS------------------- -->
-
-
-          <div class="d-flex__card ">
-            <div class="card__highlight">
-              <p class="card__title highlight__info">Wind status</p>
-              <div class="weather__number">
-                <p>7<span class="sub__text">mph</span></p>
-              </div>
-              <span class="highlight__bottom">
-                <span class="icon__location material-icons white">near_me</span>
-                <p class="highlight__info">WSW</p>
-              </span>
-            </div>
-          </div>
-
-          <div class="d-flex__card ">
-            <div class="card__highlight">
-              <p class="card__title highlight__info">Humidity</p>
-              <div class="weather__number">
-                <p>84<span class="sub__text">%</span></p>
-              </div>
-              <div class="humility__info">
-                <div class="container">
-                  <div class="humility__number">
-                    <p>0</p>
-                    <p>50</p>
-                    <p>100</p>
-                  </div>
-                  <div class="humility__bar">
-                    <span class="foreground">-</span>
-                  </div>
-                  <div class="humility__percentage">
-                    <p>%</p>
-                  </div>
+              <div class="weather__data">
+                <div class="weather__number">
+                  <p>15<span class="degrees">°C</span></p>
+                </div>
+                <h3 class="actual__forecast">Cloudy</h3>
+                <div class="date">
+                  <p>Today</p>
+                  <!--Use maybe pseudo elements-->
+                  <p>|</p>
+                  <p>Fri, 5 April</p>
+                </div>
+                <div class="location">
+                  <span class="material-icons">location_on</span>
+                  <p>Helsinki</p>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="d-flex__card ">
-            <div class="card__highlight">
-              <p class="card__title highlight__info">Visibility</p>
-              <div class="weather__number">
-                <p>6,4<span class="sub__text">miles</span></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="d-flex__card last__card">
-            <div class="card__highlight">
-              <p class="card__title highlight__info">Air Pressure</p>
-              <div class="weather__number">
-                <p>998<span class="sub__text">mb</span></p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
+      
+      <!-- -------------------FORECAST WEATHER------------------- -->
+      <div class="wrapper__right__bar">
 
-      <footer >
-        <div class="footer">
-          <p>created by <a href="https://github.com/AlanSeyfir">AlanSeyfir</a> - devChallenges.io</p>
-        </div>
-      </footer>
+        <div class="forecast__weather">
+          <div class="container">
+            <div class="menu__degrees">
+              <button class="btn-location fix__button">
+                <span class="material-icons white">°C</span>
+              </button>
+              <button class="btn-location fix__button">
+                <span class="material-icons white">°F</span>
+              </button>
+            </div>
+            <div class="grid__cards">
+              <div class="d-flex__card forecast__card">
+                <div class="card">
+                  <p class="card__title">Tommorrow</p>
+                  <img src="./img/Clear.png" alt="tomorrow weather img">
+                  <span class="degrees__forecast">
+                    <p class="max__degree">16<span class="degrees">°C</span></p>
+                    <p class="min__degree">11<span class="degrees">°C</span></p>
+                  </span>
+                </div>
+      
+                <div class="card">
+                  <p class="card__title">Sun, 7 May</p>
+                  <img src="img/Clear.png" alt="tomorrow weather img">
+                  <span class="degrees__forecast">
+                    <p class="max__degree">16<span class="degrees">°C</span></p>
+                    <p class="min__degree">11<span class="degrees">°C</span></p>
+                  </span>
+                </div>
+              </div>
+  
+              <div class="d-flex__card">
+                <div class="card">
+                  <p class="card__title">Mon, 8 May</p>
+                  <img src="img/Hail.png" alt="tomorrow weather img">
+                  <span class="degrees__forecast">
+                    <p class="max__degree">16<span class="degrees">°C</span></p>
+                    <p class="min__degree">11<span class="degrees">°C</span></p>
+                  </span>
+                </div>
+      
+                <div class="card">
+                  <p class="card__title">Tue, 9 May</p>
+                  <img src="img/Sleet.png" alt="tomorrow weather img">
+                  <span class="degrees__forecast">
+                    <p class="max__degree">16<span class="degrees">°C</span></p>
+                    <p class="min__degree">11<span class="degrees">°C</span></p>
+                  </span>
+                </div>
+
+                <div class="card">
+                  <p class="card__title">Wed, 10 May</p>
+                  <img src="img/LightCloud.png" alt="tomorrow weather img">
+                  <span class="degrees__forecast">
+                    <p class="max__degree">16<span class="degrees">°C</span></p>
+                    <p class="min__degree">11<span class="degrees">°C</span></p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- -------------------TODAY HIGHLIGHTS------------------- -->
+
+            <div class="wrapper__left__bar"></div>
+
+              <div class="d-flex__highlight">
+                <div class="d-flex__card fix__cards">
+                  <div class="card__highlight">
+                    <p class="card__title highlight__info">Wind status</p>
+                    <div class="weather__number">
+                      <p>7<span class="sub__text">mph</span></p>
+                    </div>
+                    <span class="highlight__bottom">
+                      <span class="icon__location material-icons white">near_me</span>
+                      <p class="highlight__info">WSW</p>
+                    </span>
+                  </div>
+                </div>
+  
+                <div class="d-flex__card fix__cards">
+                  <div class="card__highlight">
+                    <p class="card__title highlight__info">Humidity</p>
+                    <div class="weather__number">
+                      <p>84<span class="sub__text">%</span></p>
+                    </div>
+                    <div class="humility__info">
+                      <div class="container">
+                        <div class="humility__number">
+                          <p>0</p>
+                          <p>50</p>
+                          <p>100</p>
+                        </div>
+                        <div class="humility__bar">
+                          <span class="foreground">-</span>
+                        </div>
+                        <div class="humility__percentage">
+                          <p>%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="d-flex__highlight">
+                <div class="d-flex__card fix__cards">
+                  <div class="card__highlight">
+                    <p class="card__title highlight__info">Visibility</p>
+                    <div class="weather__number">
+                      <p>6,4<span class="sub__text">miles</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex__card fix__cards">
+                  <div class="card__highlight last__card">
+                    <p class="card__title highlight__info">Air Pressure</p>
+                    <div class="weather__number">
+                      <p>998<span class="sub__text">mb</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <footer>
+            <div class="footer">
+              <p>created by <a href="https://github.com/AlanSeyfir">AlanSeyfir</a> - devChallenges.io</p>
+            </div>
+          </footer>
+      </div>
+
       
 
     </div>
