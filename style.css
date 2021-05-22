@@ -275,6 +275,47 @@ img {
   text-align: right;
 }
 
+.last__card{
+  margin-bottom: 10em;
+}
+
+footer{
+  background-color: var(--bk-blue);
+    
+}
+
+.footer{
+  background-color: var(--bk-blue);
+  text-align: center;
+  color: var(--white-text);
+  margin: 2em;
+}
+
+.footer a{
+  padding: 2em 0;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.footer:hover a{
+  text-decoration: none;
+  color: rgb(187, 185, 185);
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+
+@media (max-width: 420px){
+  .sub__text{
+    font-size: 2rem;
+  }
+  
+  .weather__number p{
+    font-size: 4rem;
+  }
+}
+
 @media (min-width: 700px){
   .d-flex__card{
     flex-direction: unset;
