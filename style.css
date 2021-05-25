@@ -56,6 +56,8 @@ img {
   border: var(--circle-btn);
   border-radius: 20px;
   width: 3em;
+  margin-right: 1em;
+  height: 3em;
 }
 
 .btn-location:hover {
@@ -140,6 +142,15 @@ img {
   align-items: center;
   font-weight: 600;
 }
+
+.menu__degrees{
+    text-align: end;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 3.3em;
+}
+
 
 .d-flex__card{
   display: flex;
@@ -285,10 +296,9 @@ footer{
 }
 
 .footer{
-  background-color: var(--bk-blue);
   text-align: center;
   color: var(--white-text);
-  margin: 2em;
+  padding: 2em;
 }
 
 .footer a{
@@ -324,13 +334,13 @@ footer{
 
 @media (min-width: 600px){
 
-  .menu__degrees{
+  /* .menu__degrees{
     text-align: end;
     padding-top: 1em;
     padding-bottom: 1em;
     margin-right: 3.3em;
     margin-left: 3.3em;
-  }
+  } */
 
   .fix__button{
     margin-right: 1em;
