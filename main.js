@@ -7,7 +7,30 @@
 */
 
 
-const london = 'https://www.metaweather.com/api/location/search/?query=london';
+// const london = fetch('https://www.metaweather.com/api/location/search/?query=london');
+
+// fetch('https://www.metaweather.com/api/location/search/?query=london')
+//     .then(response =>response.text())
+//     .then(data =>console.log(data));
+
+async function getUsers(){
+    const xhr = new XMLHttpRequest();
+    let url = 'https://www.metaweather.com/api/location/search/?query=london';
+    
+    xhr.open('GET',url);
+    
+    try {
+        let res = await fetch(url);
+        return await res.json();
+    } catch (error) {
+        console.log(error);
+    }
+    xhr.onreadystatechange = someHandler;
+    xhr.send();
+    console.log(url);
+}
+
+getUsers();
 
 // navigator.geolocation.getCurrentPosition(
 //     function(position){
